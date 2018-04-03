@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #1ca6fc;
+}
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #f3f5f7;
+
+}
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+}
+header h1{
+    margin-top: 30px;
+    float: left;
+}
+header .logo{
+    display: block;
+    width: 195px;
+    height: 42px;
+    background: url("../images/logo-s.png");
+}
+header .fl ul{
+    margin-left: 192px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+header .fl ul li{
+    float: left;
+}
+header .fl ul li a{
+    display: block;
+    padding: 10px ;
+}
+header .fl ul li a:hover {
+    border-bottom: 1px solid #1ca6fc;
+}
+header .fr{
+}
+header .fr form{
+    width: 400px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 35px;
+
+}
+header .fr form input{
+    border: none;
+    outline: none;
+    width: 350px;
+    height: 30px;
+    float: left;
+    text-indent: 5px;
+}
+header .fr form button{
+    border: none;
+    background: #1ca6fc url("../images/search_06.png") no-repeat center;
+    width: 50px;
+    height: 30px;
+}
+header .fr ul{
+    float: left;
+    margin-top: 30px;
+}
+header .fr ul li{
+    float: left;
+}
+header .fr ul li a{
+    display: block;
+    padding: 10px;
+}
+
+header .fr ul li a.notice{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ling_06.png") no-repeat;
+    margin-top: 10px;
+}
+header .fr ul li:nth-child(3) a{
+    padding: 0;
+    vertical-align: middle;
+}
+
+/*banner*/
+.content{
+    width: 1200px;
+    height: 420px;
+    background: url("../images/banner_03.png") no-repeat;
+    position: relative;
+}
+.content .nav{
+    width: 140px;
+    height: 410px;
+    padding: 10px 20px 0 20px;
+    background: rgba(0,0,0,0.2);
+}
+.content .nav li{
+    line-height: 45px;
+}
+.content .nav a{
+    color: #fff;
+}
+.content .nav a:hover{
+    color: #1ca6fc;
+}
+/*中间指示*/
+.content .indicate{
+    width: 232px;
+    height: 16px;
+    margin: -50px auto;
+    left: -116px;
+}
+.content .indicate ul{
+    overflow: hidden;
+}
+
+.content .indicate li{
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.content .indicate li.current{
+    width: 32px;
+    background: #fff;
+    border-radius: 16px;
+}
+.content .classList{
+    width: 230px;
+    height: 300px;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    background: #fff;
+}
+.content .classList dt {
+    background: #45aae8;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 16px;
+}
+.content .classList dd{
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    margin: 0 20px;
+    line-height: 25px;
+}
+.content .classList dd p{
+    color: #ccc;
+    font-size: 13px;
+}
+.content .classList dd:last-child{
+    border-bottom: none;
+}
+.content .classList dd:last-child a{
+    display: block;
+    width: 190px;
+    height: 40px;
+    border: 1px solid #45aae8;
+    color: #45aae8;
+    text-align: center;
+    line-height: 40px;
+}
+/*导航*/
+.nav-bar{
+    margin-top: 15px;
+    height: 60px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.nav-bar ul {
+    overflow: hidden;
+    padding: 0 30px;
+}
+.nav-bar ul li{
+    float: left;
+    line-height: 60px;
+}
+.nav-bar ul li:first-child a{
+    color: #1ca6fc;
+
+}
+.nav-bar ul li:last-child {
+    float: right;
+}
+.nav-bar ul li:last-child a {
+    color: #1ca6fc;
+}
+.nav-bar ul li span{
+    margin: 0 20px;
+    color: #ccc;
+}
+/*推荐栏*/
+.recommendation {}
+.recommendation h3{
+    padding: 15px 0;
+}
+.recommendation ul{
+    overflow: hidden;
+}
+.recommendation ul li{
+    width: 220px;
+    height: 250px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.recommendation ul li:nth-child(5n){
+    margin-right: 0;
+}
+.recommendation ul li:hover{
+    box-shadow: 0 10px 5px 5px rgba(0,0,0,.2);
+}
+.recommendation ul li h5{
+    padding-top: 10px;
+    font-weight: normal;
+    font-size: 13px;
+}
+.recommendation ul li p{
+    font-size: 11px;
+    line-height: 2.8;
+    color: #ccc;
+}
+.recommendation ul li p span{
+    color: #ff1100;
+}
+.recommendation ul li .hot{
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    right: -3px;
+    top: 3px;
+    background: url("../images/sprite.png") no-repeat  0 -83px;
+}
+
+/*底部*/
+footer{
+    margin-top: 80px;
+    background: #fff;
+    overflow: hidden;
+    padding-top: 30px;
+    height: 275px;
+}
+footer .fl{
+    width: 430px;
+    padding-left: 10px;
+}
+footer .fl .logo{
+    width: 197px;
+    height: 43px;
+    background: url("../images/logo_03.png") no-repeat;
+}
+footer .fl p{
+    color: #aaa;
+    font-size: 12px;
+    margin: 30px 0;
+}
+footer .fl a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #1ca6fc;
+}
+footer .info{
+    width: 750px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+footer .info dl{
+    float: left;
+    width: 250px;
+    line-height: 2;
+}
+footer .info dl dt {
+    font-size: 16px;
+}
+
+footer .info dl dd{
+    font-size: 13px;
+}
+footer .info dl dd:hover a{
+    text-decoration: underline;
+
+}
